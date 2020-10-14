@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import SeachBox from './SearchBox';
-import employeeList from './employeeList';
+import List from './employeeList';
 
 
-class App extends Component () {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,10 +26,21 @@ class App extends Component () {
     }
   }
 
+  handleInput = (e) => {
+    console.log(e.target.value)
+    this.setState({ serachEmployee: e.target.value })
+  }
+
   render() {
+    let filteredEmployees = this.state.employees.filter((employee) => {
+      return employee.name.toLowerCase().includes(this.state.serachEmployee.toLowerCase())
+    })
+
     return (
       <div className="App">
         <h1>Employee Directory</h1>
+        <SeachBox handleInput={this.handleInput}/>
+        <List filteredEmployees={filteredEmployees}/>
       </div>
     );
   }
