@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 function employee(props) {
-    return (
-        <div style={{width: 200, border: 'solid'}}>
-            <p>Name: {props.name}</p>
-            <p>Email: {props.email}</p>
-        </div>
-    )
+  return (
+    <tr>
+      <td>Name: {props.name}</td>
+      <td>Email: {props.email}</td>
+      <td>Phone: {props.phone}</td>
+      <td>DOB: {props.dob}</td>
+    </tr>
+  )
 }
 
 export default employee;
