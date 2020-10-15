@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from "./tableside";
+import Table from "./table";
 
 function App() {
   return (
