@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 function employee(props) {
   return (
     <tr>
-      <td>Name: {props.name}</td>
-      <td>Email: {props.email}</td>
-      <td>Phone: {props.phone}</td>
-      <td>DOB: {props.dob}</td>
+      <th>Name: {props.name}</th>
+      <th>Email: {props.email}</th>
+      <th>Phone: {props.phone}</th>
+      <th>DOB: {props.dob}</th>
     </tr>
   )
 }

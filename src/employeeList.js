@@ -6,9 +6,7 @@ function employeeList(props) {
     return <Employee key={i} name={employee.name} email={employee.email} phone={employee.phone} dob={employee.dob}/>
   })
   return (
-    <table>
-      {employees}
-    </table>
+    employees
   )
 }
 
