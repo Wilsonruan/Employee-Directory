@@ -17,6 +17,8 @@ table, th, td {
     width: 1600px;
 }
 
-input {
-  margin-bottom: 30px;
+h2 {
+  text-align: center;
+  border: 3px solid black;
+  height: 60px;
 }
