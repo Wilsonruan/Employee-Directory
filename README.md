@@ -2,7 +2,9 @@
 
 ## Description:
 
-This application can allow users to search and sort the list provided by material table.
+This application can allow users to search and sort the list provided by material table.  Users can change the order and appear based on alphabetical or numerical.        
+
+![](./src/image/Employee-Directory.jpg)
 
 ## Table of Contents
 
@@ -20,7 +22,7 @@ To use this application, first you will need to clone or download the codes from
 
 ## Usage:
 
-As a user, you are view entire employees directory by searching or sorting the list. 
+As a user, you are view entire employees directory by searching or sorting the list. (i.e., "Name", "Email", "Phone" or "Birth Year").
 
 ## License:
   - [MIT](https://choosealicense.com/licenses/mit/)
